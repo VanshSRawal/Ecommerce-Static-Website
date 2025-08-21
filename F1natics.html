@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F1natics</title>
+<style>
+  /* Reset CSS */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Global Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('essereferrari.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    line-height: 1.6;
+  }
+
+  /* Navbar Styles */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .shop-now-button {
+    background-color: #fff200;
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .shop-now-button:hover {
+    background-color: #666;
+  }
+
+  /* Main Content Styles */
+  .content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  /* Newsletter Form Styles */
+  .newsletter-form {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .newsletter-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  .newsletter-submit {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff200;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .newsletter-submit:hover {
+    background-color: #666;
+  }
+
+  /* Featured Products Section Styles */
+  .featured-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .product {
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .product img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .product-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .product-description {
+    font-style: italic;
+    font-size: 16px;
+  }
+  /* Additional CSS for product image links */
+.product-link {
+  text-decoration: none;
+  color: inherit; 
+}
+
+</style>
+</head>
+<body>
+  <nav>
+    <div>
+      <a href="F1natics.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="signin.html">Sign In/Register</a>
+    </div>
+    <div>
+      <a href="shop.html" class="shop-now-button">Shop Now!</a>
+    </div>
+  </nav>
+
+  <div class="content">
+    <h1>Welcome to F1natics!</h1>
+    <p>Where Speed Meets Style!</p>
+    <form class="newsletter-form">
+      <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+      <button type="submit" class="newsletter-submit">Subscribe To Our Newsletter!</button>
+    </form>
+  </div>
+
+  <div class="featured-products">
+    <div class="product">
+      <a href="shop.html" class="product-link">
+      <img src="RICCIARDO-03-BACK.webp" alt="Product 1">
+      <div class="product-title">Daniel Ricciardo GP Tee </div>
+      <div class="product-description">Show your support for the Honey Badger with this stylish T-shirt!</div>
+    </div>
+    <div class="product">
+      <a href="shop.html" class="product-link">
+      <img src="mercedes_hoodie.avif" alt="Product 2">
+      <div class="product-title">Mercedes Hoodie</div>
+      <div class="product-description">Stay warm and fashionable with this Mercedes hoodie!</div>
+    </div>
+    <div class="product">
+      <a href="shop.html" class="product-link">
+      <img src="rbr cap.jpg" alt="Product 3">
+      <div class="product-title">Red Bull Racing Cap</div>
+      <div class="product-description">Complete your look with this Red Bull Racing cap!</div>
+    </div>
+    <div class="product">
+      <a href="shop.html" class="product-link">
+      <img src="astonmartin_alonso.webp" alt="Product 4">
+      <div class="product-title">Aston Martin Fernando Alonso</div>
+      <div class="product-description">Stay Young and Fast with Fernando's Tee!</div>
+    </div>
+    <div class="product">
+      <a href="shop.html" class="product-link">
+      <img src="mclaren_zipper.webp" alt="Product 5">
+      <div class="product-title">Mclaren Racing Zipper</div>
+      <div class="product-description">Stay Dashing and avoid the rains with the Mclaren Zipper!</div>
+    </div>
+    <div class="product">
+      <a href="shop.html" class="product-link">
+      <img src="stakef1teamwear.jpg" alt="Product 6">
+      <div class="product-title">Stake F1 Team-Wear</div>
+      <div class="product-description">Support Stake F1 team with their team wear!</div>
+    </div>
+  </div>
+</body>
+</html>

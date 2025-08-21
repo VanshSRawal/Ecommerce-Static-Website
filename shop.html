@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F1natics - Shop</title>
+<style>
+  /* Your CSS styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-family: 'Helvetica', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+  }
+  
+  nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #fff200;
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease; 
+  }
+  
+  nav a:hover {
+    background-color: #ff0000;
+    color: #ffffff 
+  }
+  
+  .container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+  }
+  
+  .product {
+    width: calc(50% - 20px); 
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease; 
+    box-sizing: border-box; 
+    display: flex; 
+    flex-direction: column; 
+  }
+
+@media only screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+  }
+  
+  .product {
+    width: 95%;
+  }
+}
+
+  .product:hover {
+    transform: scale(1.05); 
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; 
+  }
+  
+  .product .details {
+    margin-top: 10px;
+  }
+
+  .add-to-cart {
+    background-color: #fff200;
+    color: #000000;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .add-to-cart:hover {
+    background-color: #ff0000;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>F1natics Shop</h1>
+  </header>
+  
+  <nav>
+    <a href="F1natics.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="signin.html">Sign In/Register</a>
+  </nav>
+  
+  <div class="container">
+    <div class="product">
+        <img src="RICCIARDO-03-BACK.webp" alt="Daniel Ricciardo '03' Aussie GP">
+        <div class="details">
+          <h2>Daniel Ricciardo '03' Aussie GP Tee</h2>
+          <p>Loosey Goosey!</p>
+          <p>Price: ₹699</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+  
+    <div class="product">
+        <img src="VERSTAPPEN-33-MOCKUP.webp" alt="Max Verstappen '33' Dutch GP">
+        <div class="details">
+          <h2>Max Verstappen '33' Dutch GP Tee</h2>
+          <p>Simply Lovely!</p>
+          <p>Price: ₹699</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+  
+      <div class="product">
+        <img src="HAMILTON-44-MOCKUP.webp" alt="Lewis Hamilton '44' British GP">
+        <div class="details">
+          <h2>Lewis Hamilton '44' British GP Tee</h2>
+          <p>It's Hammertime!</p>
+          <p>Price: ₹699</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="product">
+        <img src="VETTEL-05-MOCKUP.webp" alt="Sebastian Vettel '05' German GP">
+        <div class="details">
+          <h2>Sebastian Vettel '05' German GP Tee</h2>
+          <p>Grazie Ragazzi!</p>
+          <p>Price: ₹699</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="stillweriseLh44.jpg" alt="Still We Rise Lewis Hamilton">
+        <div class="details">
+          <h2>Still We Rise Lewis Hamilton Tee</h2>
+          <p>Price: ₹799</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      
+      <div class="product">
+        <img src="kimiraikkonen.jpg" alt="Kimi Raikkonen">
+        <div class="details">
+          <h2>Kimi Raikkonen GP Tee</h2>
+          <p>The Iceman!</p>
+          <p>Price: ₹799</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="mercedes_hoodie.avif" alt="Mercedes Hoodie">
+        <div class="details">
+          <h2>Mercedes F1 Team Hoodie</h2>
+          <p>Silver Arrows!</p>
+          <p>Price: ₹1099</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="rbr cap.jpg" alt="Rbr Cap">
+        <div class="details">
+          <h2>Red Bull Racing Cap</h2>
+          <p>Price: ₹399</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="astonmartin_alonso.webp" alt="Aston Martin">
+        <div class="details">
+          <h2>Aston Martin Fernando Alonso Tee!</h2>
+          <p>Nandooo!</p>
+          <p>Price: ₹899</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="mclaren_zipper.webp" alt="Mclaren F1 Zipper">
+        <div class="details">
+          <h2>Mclaren F1 Zipper!</h2>
+          <p>For the Papaya Army!</p>
+          <p>Price: ₹999</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="stakef1teamwear.jpg" alt="Stake F1 Team wear">
+        <div class="details">
+          <h2>Stake F1 Team wear</h2>
+          <p>Go High or go Home!</p>
+          <p>Price: ₹899</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="ferrari tee.jpg" alt="Ferrari Tshirt">
+        <div class="details">
+          <h2>Ferrari T-shirt</h2>
+          <p>The Prancing Horses!</p>
+          <p>Price: ₹899</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+  </div>
+
+  <script>
+    // Function to handle adding a product to the cart
+    function addToCart(productName) {
+      alert(productName + " added to cart!");
+    }
+
+    //event listeners to all "Add to Cart" buttons
+    var addToCartButtons = document.querySelectorAll(".add-to-cart");
+    addToCartButtons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        var productName = this.parentNode.querySelector("h2").textContent;
+        addToCart(productName);
+      });
+    });
+  </script>
+
+</body>
+</html>
