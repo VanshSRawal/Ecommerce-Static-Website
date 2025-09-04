@@ -1,236 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>F1natics</title>
-<style>
-  /* Reset CSS */
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>F1natics – Official Formula 1 Merchandise</title>
+  
+  <meta name="description" content="Shop official F1 merchandise and apparel at F1natics. Explore tees, hoodies, caps, and accessories for passionate Formula 1 fans." />
+  <meta name="keywords" content="F1 merchandise, Formula 1 apparel, F1 fan gear, F1 clothing, F1 hoodies, F1 caps" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ecommerce-static-website-roan.vercel.app/" />
+  
+  <style>
+    /* Reset CSS */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  /* Global Styles */
-  body {
-    font-family: 'Arial', sans-serif;
-    background-image: url('essereferrari.png');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    line-height: 1.6;
-  }
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url('essereferrari.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      line-height: 1.6;
+    }
 
-  /* Navbar Styles */
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-  }
+    /* Navbar Styles */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1;
+    }
 
-  nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
 
-  nav a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
 
-  .shop-now-button {
-    background-color: #fff200;
-    color: rgb(0, 0, 0);
-    padding: 15px 30px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+    .shop-now-button {
+      background-color: #fff200;
+      color: rgb(0, 0, 0);
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-  .shop-now-button:hover {
-    background-color: #666;
-  }
+    .shop-now-button:hover {
+      background-color: #666;
+    }
 
-  /* Main Content Styles */
-  .content {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 1px;
-    text-align: center;
-    border-radius: 20px;
-    margin-top: 80px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    /* Main Content Styles */
+    .content {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1px;
+      text-align: center;
+      border-radius: 20px;
+      margin-top: 80px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-  h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
 
-  p {
-    font-size: 18px;
-    margin-bottom: 40px;
-  }
+    p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
 
-  /* Newsletter Form Styles */
-  .newsletter-form {
-    max-width: 400px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
+    /* Newsletter Form Styles */
+    .newsletter-form {
+      max-width: 400px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
 
-  .newsletter-input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 10px;
-  }
+    .newsletter-input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 10px;
+    }
 
-  .newsletter-submit {
-    width: 100%;
-    padding: 10px 0;
-    background-color: #fff200;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+    .newsletter-submit {
+      width: 100%;
+      padding: 10px 0;
+      background-color: #fff200;
+      color: rgb(0, 0, 0);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-  .newsletter-submit:hover {
-    background-color: #666;
-  }
+    .newsletter-submit:hover {
+      background-color: #666;
+    }
 
-  /* Featured Products Section Styles */
-  .featured-products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+    /* Featured Products Section Styles */
+    .featured-products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-  .product {
-    width: calc(33.33% - 40px);
-    margin: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-  }
+    .product {
+      width: calc(33.33% - 40px);
+      margin: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
 
-  .product img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
+    .product img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
 
-  .product-title {
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-  }
+    .product-title {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
 
-  .product-description {
-    font-style: italic;
-    font-size: 16px;
-  }
-  /* Additional CSS for product image links */
-.product-link {
-  text-decoration: none;
-  color: inherit; 
-}
+    .product-description {
+      font-style: italic;
+      font-size: 16px;
+    }
 
-</style>
+    /* Additional CSS for product image links */
+    .product-link {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
 </head>
 <body>
   <nav>
     <div>
-      <a href="F1natics.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="signin.html">Sign In/Register</a>
+      <a href="F1natics.html" title="Home - F1natics">Home</a>
+      <a href="about.html" title="About F1natics">About</a>
+      <a href="signin.html" title="Sign In or Register at F1natics">Sign In/Register</a>
     </div>
     <div>
-      <a href="shop.html" class="shop-now-button">Shop Now!</a>
+      <a href="shop.html" class="shop-now-button" title="Shop Official F1 Merchandise">Shop Now!</a>
     </div>
   </nav>
 
   <div class="content">
     <h1>Welcome to F1natics!</h1>
     <p>Where Speed Meets Style!</p>
-    <form class="newsletter-form">
-      <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+    <form class="newsletter-form" aria-label="Subscribe to F1natics Newsletter">
+      <input type="email" class="newsletter-input" placeholder="Enter your email address" aria-label="Email address" required />
       <button type="submit" class="newsletter-submit">Subscribe To Our Newsletter!</button>
     </form>
   </div>
 
+  <h2 style="text-align:center; color:white; margin-top:40px;">Featured Products</h2>
   <div class="featured-products">
     <div class="product">
-      <a href="shop.html" class="product-link">
-      <img src="RICCIARDO-03-BACK.webp" alt="Product 1">
-      <div class="product-title">Daniel Ricciardo GP Tee </div>
-      <div class="product-description">Show your support for the Honey Badger with this stylish T-shirt!</div>
+      <a href="shop.html" class="product-link" title="Daniel Ricciardo GP Tee">
+        <img src="RICCIARDO-03-BACK.webp" alt="Daniel Ricciardo GP Tee - Official F1 T-shirt" />
+        <div class="product-title">Daniel Ricciardo GP Tee</div>
+        <div class="product-description">Show your support for the Honey Badger with this stylish T-shirt!</div>
+      </a>
     </div>
     <div class="product">
-      <a href="shop.html" class="product-link">
-      <img src="mercedes_hoodie.avif" alt="Product 2">
-      <div class="product-title">Mercedes Hoodie</div>
-      <div class="product-description">Stay warm and fashionable with this Mercedes hoodie!</div>
+      <a href="shop.html" class="product-link" title="Mercedes Hoodie">
+        <img src="mercedes_hoodie.avif" alt="Mercedes AMG Petronas Hoodie - F1 Official Merchandise" />
+        <div class="product-title">Mercedes Hoodie</div>
+        <div class="product-description">Stay warm and fashionable with this Mercedes hoodie!</div>
+      </a>
     </div>
     <div class="product">
-      <a href="shop.html" class="product-link">
-      <img src="rbr cap.jpg" alt="Product 3">
-      <div class="product-title">Red Bull Racing Cap</div>
-      <div class="product-description">Complete your look with this Red Bull Racing cap!</div>
+      <a href="shop.html" class="product-link" title="Red Bull Racing Cap">
+        <img src="rbr cap.jpg" alt="Red Bull Racing Cap - Formula 1 Fanwear" />
+        <div class="product-title">Red Bull Racing Cap</div>
+        <div class="product-description">Complete your look with this Red Bull Racing cap!</div>
+      </a>
     </div>
     <div class="product">
-      <a href="shop.html" class="product-link">
-      <img src="astonmartin_alonso.webp" alt="Product 4">
-      <div class="product-title">Aston Martin Fernando Alonso</div>
-      <div class="product-description">Stay Young and Fast with Fernando's Tee!</div>
+      <a href="shop.html" class="product-link" title="Aston Martin Fernando Alonso Tee">
+        <img src="astonmartin_alonso.webp" alt="Aston Martin Fernando Alonso Tee - F1 Apparel" />
+        <div class="product-title">Aston Martin Fernando Alonso</div>
+        <div class="product-description">Stay Young and Fast with Fernando's Tee!</div>
+      </a>
     </div>
     <div class="product">
-      <a href="shop.html" class="product-link">
-      <img src="mclaren_zipper.webp" alt="Product 5">
-      <div class="product-title">Mclaren Racing Zipper</div>
-      <div class="product-description">Stay Dashing and avoid the rains with the Mclaren Zipper!</div>
+      <a href="shop.html" class="product-link" title="Mclaren Racing Zipper Jacket">
+        <img src="mclaren_zipper.webp" alt="Mclaren Racing Zipper Jacket - F1 Teamwear" />
+        <div class="product-title">Mclaren Racing Zipper</div>
+        <div class="product-description">Stay Dashing and avoid the rains with the Mclaren Zipper!</div>
+      </a>
     </div>
     <div class="product">
-      <a href="shop.html" class="product-link">
-      <img src="stakef1teamwear.jpg" alt="Product 6">
-      <div class="product-title">Stake F1 Team-Wear</div>
-      <div class="product-description">Support Stake F1 team with their team wear!</div>
+      <a href="shop.html" class="product-link" title="Stake F1 Team-Wear">
+        <img src="stakef1teamwear.jpg" alt="Stake F1 Team-Wear - Official F1 Merchandise" />
+        <div class="product-title">Stake F1 Team-Wear</div>
+        <div class="product-description">Support Stake F1 team with their team wear!</div>
+      </a>
     </div>
   </div>
-</body>
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7QWM2ZMZ5K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7QWM2ZMZ5K');
-</script>
-  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7QWM2ZMZ5K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7QWM2ZMZ5K');
+  </script>
+</body>
 </html>
-
